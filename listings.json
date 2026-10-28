@@ -1,0 +1,48 @@
+{
+  "_help": {
+    "how": "Add one entry per property to 'listings', separated by commas. Copy the blank entry at the bottom. Entries with \"_example\": true are ignored.",
+    "required": {
+      "name": "Short name, e.g. '4 bed terrace, Fishers Lane'",
+      "url": "Link to the advert",
+      "postcode": "Full postcode, e.g. 'W4 1RX'",
+      "price": "Rent per month in pounds, e.g. 3800"
+    },
+    "optional (leave out, or set to null, if you don't know)": {
+      "status": "One of: Not contacted, Enquired, Viewing booked, Viewed, Offer made, Secured, Denied, Not for us, No longer available. Blank = Not contacted",
+      "notes": "Anything else",
+      "bedrooms": "Number, e.g. 4",
+      "bathrooms": "Number, e.g. 2",
+      "address": "Street address",
+      "property_type": "house / flat / maisonette ...",
+      "hmo_licensed": "true, false, or null if you don't know",
+      "status_date": "When the status last changed, e.g. '2026-10-28'",
+      "viewing_date": "e.g. '2026-11-02 18:30'",
+      "agent": "Agent or landlord name / phone / email",
+      "source": "Where you found it, e.g. Rightmove",
+      "available_from": "e.g. '2026-12-01'",
+      "lat": "Latitude, only if the postcode puts the pin in the wrong place",
+      "lon": "Longitude, as above"
+    }
+  },
+  "listings": [
+    {
+      "_example": true,
+      "name": "4 bed terrace, Fishers Lane",
+      "url": "https://www.rightmove.co.uk/properties/000000000",
+      "postcode": "W4 1RX",
+      "price": 3800,
+      "status": "Viewing booked",
+      "viewing_date": "2026-11-02 18:30",
+      "bedrooms": 4,
+      "notes": "Sharers welcome"
+    },
+    {
+      "name": "Test",
+      "url": "https://www.rightmove.co.uk/properties/94504704#/?channel=RES_LET",
+      "postcode": "W4 1RX",
+      "price": 4000,
+      "status": "",
+      "notes": ""
+    }
+  ]
+}
